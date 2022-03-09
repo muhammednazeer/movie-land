@@ -8,7 +8,10 @@ const App = () => {
         const data = await response.json();
         console.log(data);
     }
-  
+    useEffect(() => {
+        searchMovie('spiderman');
+        
+    }, [])
     return (
        
             <h1>Welcome to Film Empire</h1>
